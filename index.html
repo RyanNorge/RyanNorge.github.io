@@ -1,43 +1,75 @@
 <!DOCTYPE html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <style>
+
+    :root {
+        --color1: #EFF6E0;
+        --color2: #AEC3B0;
+        --color2-2: rgba(174, 195, 176, 0.5);
+        --color3: #598392;
+        --color4: #124559;
+        --color5: #01161E;
+
+
+        background: linear-gradient(90deg, var(--color3) 0%, var(--color2) 25%, var(--color2) 75%, var(--color3) 100%);
+        font-family: 'Montserrat', sans-serif;
+
+        color: var(--color5);
+        text-align: center;
+
+
+        --dotsradius: 1em;
+
+    }
+
+    h1{
+        font-size: 300%;
+    }
     #online{
         font-size:x-large;
     } 
-    #centerdiv {
-        background-color: steelblue;
-        border: thick;
-        border-style:groove;
+    #outerdots {
+        //background-color: steelblue;
+        //padding: 3em;
+        margin: 3em;
+        border: 2em;
+        border-style:dotted;
+        border-radius: var(--dotsradius);
+        border-color: var(--color3);
+        width: 700px;
+        max-width: 70%;
+        margin: auto;
+        //width: 70%;
+    }
+    #innerdots {
+        background-color: var(--color3);
+        padding: 3em;
+        //margin: 3em;
+        border: 2em;
+        border-style:dotted;
+        border-radius: var(--dotsradius);
+        border-color: var(--color2);
+        color: var(--color1);
+
     }
 </style>
+</head>
 <html>
 <body>
-
-    <div id="centerdiv">
-    <center>
-<br>
-<br>
-<br>
-<br>
-
-    <h1>Hello World</h1>
-    <p id="online">I am online!!!</p>
-
-    <input type="text">
-    <input type="password" name="pword" id="">
-    <input type="radio" name="radio" id="">
-
-<table>
-    <thead>
-        <tr>
-            <th>table head</th>
-        </tr>
-    </thead>
-    <tbody>
-        <td>This is a table :)</td>
-    </tbody>
-</table>
-
-</center>
+<br><br><br>
+    <div id="outerdots">
+    <div id="innerdots">
+        <h1>Hello World</h1>
+        <p id="online">I am online!!!</p>
+        <p>and I'm gonna have some fun with it :)</p>
     </div>
+    </div>
+
+    <br><br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </body>
 </html>
